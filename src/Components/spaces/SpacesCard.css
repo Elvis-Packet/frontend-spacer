@@ -1,0 +1,125 @@
+.space-card {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background-color: white;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .space-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .space-image-container {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .space-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+  }
+  
+  .space-card:hover .space-image {
+    transform: scale(1.05);
+  }
+  
+  .space-discount {
+    position: absolute;
+    top: var(--space-2);
+    left: var(--space-2);
+    background-color: var(--color-accent-500);
+    color: white;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  
+  .space-content {
+    padding: var(--space-3);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .space-type {
+    color: var(--color-primary-500);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: var(--space-1);
+  }
+  
+  .space-name {
+    margin-bottom: var(--space-1);
+    font-weight: 600;
+    color: var(--color-neutral-900);
+  }
+  
+  .space-location {
+    color: var(--color-neutral-600);
+    font-size: 0.9rem;
+    margin-bottom: var(--space-2);
+  }
+  
+  .space-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: var(--space-3);
+  }
+  
+  .space-feature {
+    background-color: var(--color-neutral-100);
+    color: var(--color-neutral-700);
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .space-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--color-neutral-200);
+  }
+  
+  .space-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .rating-star {
+    color: var(--color-warning-500);
+  }
+  
+  .rating-value {
+    font-weight: 600;
+  }
+  
+  .rating-count {
+    color: var(--color-neutral-600);
+    font-size: 0.8rem;
+  }
+  
+  .space-price {
+    font-weight: 600;
+    color: var(--color-neutral-900);
+  }
+  
+  .price-period {
+    font-weight: 400;
+    color: var(--color-neutral-600);
+    font-size: 0.85rem;
+  }
