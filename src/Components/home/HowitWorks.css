@@ -1,0 +1,76 @@
+.how-it-works {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--space-5);
+    position: relative;
+  }
+  
+  .step {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 var(--space-2);
+  }
+  
+  .step-icon {
+    width: 64px;
+    height: 64px;
+    background-color: var(--color-primary-500);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-3);
+    font-size: 1.75rem;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .step-title {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-2);
+  }
+  
+  .step-description {
+    color: var(--color-neutral-600);
+    font-size: 0.95rem;
+  }
+  
+  .step-connector {
+    position: absolute;
+    top: 32px;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-primary-500);
+  }
+  
+  @media (max-width: 992px) {
+    .how-it-works {
+      flex-wrap: wrap;
+      gap: var(--space-4);
+    }
+    
+    .step {
+      flex: 0 0 calc(50% - var(--space-3));
+    }
+  
+    .step-connector {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 568px) {
+    .how-it-works {
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    
+    .step {
+      width: 100%;
+    }
+  }
